@@ -11,12 +11,12 @@ compatibility_flags = []
 
 [durable_objects]
 bindings = [
-  { name = "COUNTER", class_name = "Counter" }
+  { name = "CAMPAIGN", class_name = "Campaign" }
 ]
 
 [[migrations]]
 tag = "v1"
-new_classes = ["Counter"]
+new_classes = ["Campaign"]
 
 [build]
 command = "npm run build"
