@@ -13,7 +13,11 @@ describe('inactive campaign', () => {
   });
 
   beforeEach(() => {
+    // this version fails
     campaign = new Campaign(new DurableObjectState(id as any, storage as any), env);
+    
+    // this version works
+    // campaign = new Campaign({} as any, env);
   });
 
   test('constructs', () => {
